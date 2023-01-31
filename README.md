@@ -134,7 +134,7 @@ Replace characters/text
 
 `print(example_text.replace("with" , ","))`
 
-###Concatenation
+### Concatenation
 
 Strings can be concatenated (attached together in order) with the + operator
 
@@ -162,32 +162,34 @@ Casting is important to be able to turn datatypes that won't work in your code t
 
 `print(x + y + z)`
 
+This is necessary to turn the integers and doubles into a string here for the purpose of printing.
+
 `print(str(x) + ", " + str(y) + z)`
 
 ### string to numeric
 
-int_string = "6"
-print(float(int_string))
-print(type(int(int_string)))
+`int_string = "6"`
+`print(float(int_string))`
+`print(type(int(int_string)))`
 
-F-strings
+### F-strings
 
-name = "Lassie"
-years = 7
-height_cm = 60.2
+`name = "Lassie"`
+`years = 7`
+`height_cm = 60.2`
 
-print(f"{name} is {years} years and old {height_cm}cm tall")
+`print(f"{name} is {years} years and old {height_cm}cm tall")`
 
 F-strings allow us to use methods/evaluations too
 
-name = "Snoopy"
-years = 52
+`name = "Snoopy"`
+`years = 52`
 
-print(f"{name.upper()} IS {years * 7} YEARS OLD IN DOG YEARS !!!")
+`print(f"{name.upper()} IS {years * 7} YEARS OLD IN DOG YEARS !!!")`
 
 F-strings to specify precision in rounding and decimals
 
-pi = 3.14159265359
+`pi = 3.14159265359`
 
 print(f"Pi to 3 decimal places:{pi:.3f}") # Pi to 3 decimal places
 print(f"Pi to 3 decimal places:{pi:.5f}") # Pi to 5 decimal places
