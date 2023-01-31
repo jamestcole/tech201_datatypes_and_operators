@@ -78,6 +78,7 @@ standard practice is to use double qoutes for strings and single within if neede
 Everything in code starts with 0 not 1 as can be demonstrated below, bare this in mind when slicing strings
 
 H e l l o   W o r l d !
+
 0 1 2 3 4 5 6 7 8 9 10 11
 
 Hw = "Hello world!"
@@ -93,48 +94,54 @@ One string method is the strip method to remove unneccasery spaces at the end of
 
 `strip()`
 
-white_space = "lot's of space at the end                 "
+`white_space = "lot's of space at the end                 "`
 
-print(len(white_space)) #44
+We can use len() to find the length of the string by placing our string within the brackets.
 
-print(len(white_space.strip()))
+`print(len(white_space))` #44
 
-A few more
+`print(len(white_space.strip()))`
 
-example_text = "Here's some text with lot's of text"
+### A few more methods
+
+`example_text = "Here's some text with lot's of text"`
 
 Count a substring within a string
 
-print(example_text.count("text"))
+`print(example_text.count("text"))`
 
 Make everything lowercase
-print(example_text.lower())
+
+`print(example_text.lower())`
 
 Make everything uppercase
-print(example_text.upper())
+
+`print(example_text.upper())`
 
 Capitalise things
-print(example_text.capitalize())
+
+`print(example_text.capitalize())`
 
 Replace characters/text
-print(example_text.replace("with" , ","))
 
-Concatenation
+`print(example_text.replace("with" , ","))`
 
-a = "here "
-b = "more "
-c = "much more"
-print(a + b + c)
+###Concatenation
+
+`a = "here "`
+`b = "more "`
+`c = "much more"`
+`print(a + b + c)`
 
 ### Casting
 
-x = 2
-y = 5.4
-z = " there's a number 25.4 unless we put a space in"
-print(x + y + z)
-print(str(x) + ", " + str(y) + z)
+`x = 2`
+`y = 5.4`
+`z = " there's a number 25.4 unless we put a space in"`
+`print(x + y + z)`
+`print(str(x) + ", " + str(y) + z)`
 
-string to numeric
+### string to numeric
 
 int_string = "6"
 print(float(int_string))
