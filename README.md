@@ -104,6 +104,8 @@ We can use len() to find the length of the string by placing our string within t
 
 ### A few more methods
 
+We can see a few more examples of methods here, there are many more methods available than these.
+
 `example_text = "Here's some text with lot's of text"`
 
 Count a substring within a string
