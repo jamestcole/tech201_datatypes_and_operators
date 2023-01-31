@@ -55,30 +55,38 @@ Strings can be contained in both single and double quotes, They can contain all 
 `Single_quotes = 'Look! Single quotes'`
 `Double_quotes = "Look! Double quotes"`
 
-`print(Single_quotes)`
-`print(Double_quotes)`
+You can see both of these work , however make sure not to mix them.
+
+`print(Single_quotes)`#Look! Single quotes
+`print(Double_quotes)`#Look! Double quotes
+
+In this case the string does not print correctly unless you use the \ key to cancel out the additional qoutation marks.
 
 `string_failure = 'I said \'Wow\''`
 `print(string_failure)`
+
+Another way of printing quotes is just to use different quotes but this can be confusing.
 `quote_in_quote = 'I said "Wow!"'`
 `print(quote_in_quote)`
 
-standard practice
+standard practice is to use double qoutes for strings and single within if needed.
 `reverse_quote = "I said 'Wow'"`
 `print(reverse_quote)`
 
-#String slicing
+###String slicing
 
-# Everything in code starts with 0 not 1
-# H e l l o   W o r l d !
-# 0 1 2 3 4 5 6 7 8 9 10 11
+Everything in code starts with 0 not 1 as can be demonstrated below, bare this in mind when slicing strings
 
-# Hw = "Hello world!"
-# print(Hw[7:]) # orld!
-# print(Hw[-5:]) # orld!
-# print(Hw[:5]) # Hello
-# print(Hw[0:5]) # Hello
-#
+H e l l o   W o r l d !
+0 1 2 3 4 5 6 7 8 9 10 11
+
+Hw = "Hello world!"
+
+`print(Hw[7:])` # orld!
+`print(Hw[-5:])` # orld!
+`print(Hw[:5])` # Hello
+`print(Hw[0:5])` # Hello
+
 # # String methods
 #
 # # strip()
