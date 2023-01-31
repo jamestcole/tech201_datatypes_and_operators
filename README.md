@@ -168,15 +168,28 @@ This is necessary to turn the integers and doubles into a string here for the pu
 
 ### string to numeric
 
+Here we have a number within a string, remember the qoutation marks make this a string and not an integer
+
 `int_string = "6"`
+
+We can convert this into a float for the purpose of calculations by using the float() method.
+
 `print(float(int_string))`
+
+This will demonstrate that it's type is an int, in this case using the int() method.
+
 `print(type(int(int_string)))`
 
 ### F-strings
 
+F strings are incredibly usefull lines of code that let you quickly generate a string containing other data from your program.
+Let's create some data first to demonstrate with.
+
 `name = "Lassie"`
 `years = 7`
 `height_cm = 60.2`
+
+Here we place the f infront of the string and {} to incorperate our data.
 
 `print(f"{name} is {years} years and old {height_cm}cm tall")`
 
@@ -185,21 +198,25 @@ F-strings allow us to use methods/evaluations too
 `name = "Snoopy"`
 `years = 52`
 
+We can also use operators and methods within our f string, it is easy to see how powerful this is for creating short readable programs with fewer lines of code and faster implementation.
+
 `print(f"{name.upper()} IS {years * 7} YEARS OLD IN DOG YEARS !!!")`
 
 F-strings to specify precision in rounding and decimals
 
 `pi = 3.14159265359`
 
-print(f"Pi to 3 decimal places:{pi:.3f}") # Pi to 3 decimal places
-print(f"Pi to 3 decimal places:{pi:.5f}") # Pi to 5 decimal places
+### Decimal places
 
-score = 16
-max_score = 26
+`print(f"Pi to 3 decimal places:{pi:.3f}")` # Pi to 3 decimal places
+`print(f"Pi to 3 decimal places:{pi:.5f}")` # Pi to 5 decimal places
 
-print(f"You scored {score/max_score}") # 0.6153846153846154
-print(f"You scored {score/max_score:.2%}") # 61.54
-print(f"You scored {score/max_score:.0%}") # 62%
+`score = 16`
+`max_score = 26`
+
+`print(f"You scored {score/max_score}")` # 0.6153846153846154
+`print(f"You scored {score/max_score:.2%}")` # 61.54
+`print(f"You scored {score/max_score:.0%}")` # 62%
 
 # Booleans
 
