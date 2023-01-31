@@ -100,7 +100,13 @@ We can use len() to find the length of the string by placing our string within t
 
 `print(len(white_space))` #44
 
+The method is used with a . after the string that is intended to strip
+
 `print(len(white_space.strip()))`
+
+This should be returned with a smaller length.
+
+`print(len(white_space))`
 
 ### A few more methods
 
@@ -130,17 +136,32 @@ Replace characters/text
 
 ###Concatenation
 
+Strings can be concatenated (attached together in order) with the + operator
+
 `a = "here "`
+
 `b = "more "`
+
 `c = "much more"`
+
+It's important to remember to add spaces if this is intended to produce a readable sentence.
+
 `print(a + b + c)`
 
+If spaces have not been added these can be added in the print statement
+
+`print(a + " " + b + " " + c)`
+
 ### Casting
+
+Casting is important to be able to turn datatypes that won't work in your code to those that will.
 
 `x = 2`
 `y = 5.4`
 `z = " there's a number 25.4 unless we put a space in"`
+
 `print(x + y + z)`
+
 `print(str(x) + ", " + str(y) + z)`
 
 ### string to numeric
