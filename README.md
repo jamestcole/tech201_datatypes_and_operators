@@ -2,51 +2,70 @@
 tech201_datatypes_and_operators
 
 ## Data types
-Numeric - Ints, Floats, longs, complex
-String - Text of any type
-Boolean - True or False
+There are many datatypes in python which are useful for different tasks, the most common being
+Ints, Floats, Strings and Boolean. complex numbers are rare and longs are no longer in use but both
+are worth being aware of.
 
-Operators
-Arithmetic operators
+- Numeric - Ints, Floats, longs, complex
+
+- String - Text of any type
+
+- Boolean - True or False
+
+### Operators
+Basic mathematical operators are useful for calculations in python, while comparison operators are used for comparisons between numbers.
+
+- Arithmetic operators
  +,-,*,/
-Comparison operators
+
+- Comparison operators
  >,<,==,!=,>=,<=
 
-Implementing numeric types
+### Implementing numeric types
 
-Ints
+Integers store whole numbers, lets start by using these.
 
-a=24
-b=16
+`a=24`
+`b=16`
 
-print(a + b)
-print(a > b)
-print(a < b)
+We can see by printing the following code, + returns an integer, since two intergers are added, while the comparison operators return a boolean.
 
-FloatNum = 1.356
-IntNum = 4
+`print(a + b)` #40
+`print(a > b)` #True
+`print(a < b)` #False
 
-print(FloatNum + IntNum)
+Let's have a look at what happens when floats are added together.
 
-one_third= 1/3
-print(one_third)
-print(one_third*3)
+`FloatNum = 1.356` 
+`IntNum = 4`
+`print(FloatNum + IntNum)` #5.356
 
-# #Strings
-# Single_quotes = 'Look! Single quotes'
-# Double_quotes = "Look! Double quotes"
-#
-# print(Single_quotes)
-# print(Double_quotes)
-#
-# string_failure = 'I said \'Wow\''
-# print(string_failure)
-# quote_in_quote = 'I said "Wow!"'
-# print(quote_in_quote)
-#
-# #standard practice
-# reverse_quote = "I said 'Wow'"
-# print(reverse_quote)
+You can see it returns a float.
+Dividing one by three returns the a float, however multiplying it by three returns 1, In this case the float is rounded up.
+
+`one_third= 1/3` 
+`print(one_third)` #0.33333333333
+`print(one_third*3)` #1
+
+
+## Strings
+
+Strings can be contained in both single and double quotes, They can contain all kinds of characters, but bear in mind some characters can change the functioning of the string in certain formats such as f strings which we will see a little later.
+
+`Single_quotes = 'Look! Single quotes'`
+`Double_quotes = "Look! Double quotes"`
+
+`print(Single_quotes)`
+`print(Double_quotes)`
+
+`string_failure = 'I said \'Wow\''`
+`print(string_failure)`
+`quote_in_quote = 'I said "Wow!"'`
+`print(quote_in_quote)`
+
+standard practice
+`reverse_quote = "I said 'Wow'"`
+`print(reverse_quote)`
 
 #String slicing
 
